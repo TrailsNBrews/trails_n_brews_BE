@@ -16,7 +16,7 @@ class OpenBrewService
       parse_json(response)
   end
 
-  def self.conn   
+  def self.conn
     Faraday.new('https://api.openbrewerydb.org')
   end
 
