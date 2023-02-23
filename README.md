@@ -130,6 +130,10 @@ Trails N' Brews - BE is the back end portion and is in charge of setting the nec
    ```js
    rails db:{create,migrate}
    ```
+4. Run RSpec tests
+    ```sh
+    bundle exec rspec
+    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
