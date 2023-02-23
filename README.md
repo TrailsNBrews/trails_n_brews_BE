@@ -209,7 +209,7 @@ Project Link: [https://github.com/TrailsNbrews/trails_n_brews_BE](https://github
 
 
 
-<!-- ACKNOWLEDGMENTS -->
+<!-- ACKNOWLEDGMENTS 
 ## Acknowledgments
 
 * []()
@@ -217,7 +217,7 @@ Project Link: [https://github.com/TrailsNbrews/trails_n_brews_BE](https://github
 * []()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+-->
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
