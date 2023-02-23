@@ -1,8 +1,8 @@
 class OpenBrewService
-  def self.find_by_location(latitude,longitude,pages)
+  def self.find_by_location(location,count)
     response = conn.get("/breweries?") do |search|
-      search.params['by_dist'] = latitude, longitude
-      search.params['page'] = pages
+      search.params['by_dist'] = location
+      search.params['per_page'] = count
     end
     parse_json(response)
   end
