@@ -98,7 +98,6 @@ Trails N' Brews - BE is the back end portion and is in charge of setting the nec
 ### Built With
 
 * [![Rails]][Rails-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
