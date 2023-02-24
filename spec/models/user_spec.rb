@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  describe 'validations presence and uniquness' do
+  describe 'validations for presence and uniquness' do
     it { should validate_presence_of :google_id }
     it { should validate_presence_of :google_token }
     it { should validate_presence_of :email }
