@@ -1,6 +1,5 @@
 require 'rails_helper'
 
-
 RSpec.describe 'Search Index' do
   describe 'find brewery by location coordinates' do
     it '#find_by_location returns a given number of results with attributes' do
@@ -37,5 +36,4 @@ RSpec.describe 'Search Index' do
       expect(data[0][:name].downcase).to include(name.downcase)
     end
   end
-
 end

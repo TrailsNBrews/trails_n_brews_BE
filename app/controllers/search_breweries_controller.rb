@@ -5,5 +5,4 @@ class SearchBreweriesController < ApplicationController
 
   def show
   end
-
 end
