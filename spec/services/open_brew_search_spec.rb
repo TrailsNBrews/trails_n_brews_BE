@@ -38,4 +38,24 @@ RSpec.describe 'Search Index' do
     end
   end
 
+  describe 'find brewery by ID' do
+    it '#find_brewery_by_id returns an single brewery with the ID provided' do
+      id = 'odell-brewing-co-fort-collins'
+      name_expected = 'Odell Brewing Co'
+      latitude_expected = '40.5895239'
+      longitude_expected = '-105.0633327'
+
+      data = OpenBrewService.find_brewery_by_id(id)
+
+      expect(data).to be_a(Hash)
+      expect(data).to have_key(:id)
+      expect(data).to have_key(:city)
+      expect(data).to have_key(:longitude)
+      expect(data).to have_key(:latitude)
+      expect(data[:name]).to eq(name_expected)
+      expect(data[:longitude]).to eq(longitude_expected)
+      expect(data[:latitude]).to eq(latitude_expected)
+    end
+  end
+
 end
