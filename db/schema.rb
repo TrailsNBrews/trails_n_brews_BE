@@ -10,12 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_02_24_015154) do
+ActiveRecord::Schema.define(version: 2023_02_24_031232) do
 
   create_table "breweries", force: :cascade do |t|
     t.string "brew_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "user_breweries", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "brewery_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["brewery_id"], name: "index_user_breweries_on_brewery_id"
+    t.index ["user_id"], name: "index_user_breweries_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
