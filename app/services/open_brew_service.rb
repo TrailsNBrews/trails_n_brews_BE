@@ -16,6 +16,10 @@ class OpenBrewService
       parse_json(response)
   end
 
+  def self.find_brewery_by_id(id)
+    parse_json(conn.get("/breweries/#{id}"))
+  end
+
   def self.conn
     Faraday.new('https://api.openbrewerydb.org')
   end
