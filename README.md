@@ -85,9 +85,7 @@ Utilize an Agile project management process to hone skill and comfort with build
 
 ### Built With
 
-[![Rails]][Rails-url]
-<!-- * [![Bootstrap][Bootstrap.com]][Bootstrap-url] -->
-
+* [![Rails]][Rails-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
