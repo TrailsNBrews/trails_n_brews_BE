@@ -24,32 +24,16 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/TrailsNBrews/trails_n_brews_BE">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <!--<img src="images/logo.png" alt="Logo" width="80" height="80">-->
   </a>
 
 <h3 align="center">Trails N Brews, BE</h3>
 
-  <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/TrailsNBrews/trails_n_brews_BE"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/TrailsNBrews/trails_n_brews_BE">View Demo</a>
-    ·
-    <a href="https://github.com/TrailsNBrews/trails_n_brews_BE/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/TrailsNBrews/trails_n_brews_BE/issues">Request Feature</a>
-  </p>
 </div>
 
 
@@ -61,6 +45,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href="#learning-goals">Learning Goals</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -85,20 +70,23 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 Trails N' Brews (TnB) is a web app seeking to answer one of life's greatest needs for the Colorado hiker. Whether it be a 1 mile trail along the front range or an expedition to the summit of one this great state's many 14ers all hikers want to know where the nearest brewery is to celebrate and wind down from their achievement. TnB is designed with service oriented architecture.
 
-Trails N' Brews - BE is the back end portion and is in charge of setting the necessary endpoints and services needed by the FE half.
+Trails N' Brews - BE is the back end portion and is in charge of setting the necessary endpoints and services needed by the [FE half](https://github.com/TrailsNBrews/Trails-N-Brews_FE).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Learning Goals
+Utilize an Agile project management process to hone skill and comfort with building a back end under a service oriented architecture. This will be achieved by consuming the [Open Brewery DB's API](https://www.openbrewerydb.org/) and the [Colorado Trail Explorer (COTREX) data](https://data.colorado.gov/Recreation/Colorado-Trail-Explorer-COTREX-/tsn8-y22x) and exposing them as API endpoints for our front end to call upon. Developers will build experience using Github Projects and the issues features as a project management tool.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-* [![Rails]][Rails-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+[![Rails]][Rails-url]
+<!-- * [![Bootstrap][Bootstrap.com]][Bootstrap-url] -->
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -112,9 +100,6 @@ Trails N' Brews - BE is the back end portion and is in charge of setting the nec
 
 * Ruby 2.7.4
 * Rails 5.2.8
-  ```sh
-  npm install npm@latest -g
-  ```
 
 ### Installation
 
