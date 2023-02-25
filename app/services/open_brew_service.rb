@@ -13,7 +13,7 @@ class OpenBrewService
       search.params['by_name'] = name
       search.params['per_page'] = count
     end
-      parse_json(response)
+    parse_json(response)
   end
 
   def self.find_brewery_by_id(id)
