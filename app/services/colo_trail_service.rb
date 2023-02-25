@@ -1,7 +1,9 @@
 class ColoTrailService
   def self.find_by_name(fragment, count = 5)
-    found_trails = parse_json[:features].select { |feature| feature[:properties][:name].include?(fragment) }
-    found_trails.first(count)
+    found_trails = parse_json[:features].select do |feature|
+      feature[:properties][:name].downcase.include?(fragment.downcase)
+    end
+    found_trails.first(count.to_i)
   end
 
   def self.find_by_id(id)

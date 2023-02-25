@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Search Trail Index' do
+RSpec.describe 'Search Trail' do
   describe '#find_by_name' do
     it 'returns a given number of results with attributes' do
       expect(ColoTrailService.find_by_name('head', 5)).to be_a(Array)
