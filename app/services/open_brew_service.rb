@@ -1,5 +1,5 @@
 class OpenBrewService
-  def self.find_by_location(location,count)
+  def self.find_by_location(location, count = 5)
     response = conn.get("/breweries?") do |search|
       search.params['by_dist'] = location
       search.params['per_page'] = count
@@ -7,7 +7,7 @@ class OpenBrewService
     parse_json(response)
   end
 
-  def self.find_brewery(name, count)
+  def self.find_brewery(name, count = 5)
     response = conn.get("/breweries") do |search|
       search.params['by_state'] = 'colorado'
       search.params['by_name'] = name
