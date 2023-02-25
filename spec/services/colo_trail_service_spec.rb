@@ -13,10 +13,10 @@ RSpec.describe 'Search Index' do
   end
 
   describe 'find trail by ID' do
-    it '#find_trail_by_id returns an single trail with the ID provided' do
+    it '#find_by_id returns an single trail with the ID provided' do
       id = ColoTrailService.find_by_name('head', 1).first[:properties][:feature_id]
 
-      trail = ColoTrailService.find_trail_by_id(id)
+      trail = ColoTrailService.find_by_id(id)
 
       expect(trail).to be_a(Hash)
       expect(trail[:properties][:name]).to be_a(String)
