@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Search Index' do
+RSpec.describe 'Search Brewery Index' do
   describe 'find brewery by location coordinates' do
     it '#find_by_location returns a given number of results with attributes' do
       location = "39.7392,-104.9903"
