@@ -5,8 +5,7 @@ RSpec.describe 'Search Brewery Index' do
     it '#find_by_location returns a given number of results with attributes' do
       location = "39.7392,-104.9903"
       count = 5
-      data = OpenBrewService.find_by_location(location,count)
-      require 'pry';binding.pry
+      data = OpenBrewService.find_by_location(location, count)
       expect(data).to be_a(Array)
       expect(data.count).to eq(count)
       expect(data[0]).to be_a(Hash)
