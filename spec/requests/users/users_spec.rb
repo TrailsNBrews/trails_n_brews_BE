@@ -71,5 +71,22 @@ RSpec.describe 'Users API' do
       expect(created_user[:attributes][:google_id]).to eq(user_params[:google_id])
       expect(created_user[:attributes][:google_token]).to eq(user_params[:google_token])
     end
+
+    it 'notifies of errors due to missing attributes' do
+      user_params = ({
+        email: 'jimmyjoe@gmail.com',
+        first_name: 'Jimmy',
+        last_name: 'Joe',
+        google_id: '1234',
+        google_token: '474E5a5s12'
+      })
+      headers = { "CONTENT_TYPE" => "application/json" }
+
+      post api_v1_users_path, headers: headers, params: JSON.generate(user: user_params)
+
+      get api_v1_user_path(user_params[:google_id]), headers: headers
+
+      expect(response).to_not be_successful
+    end
   end
 end
