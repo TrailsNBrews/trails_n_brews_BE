@@ -10,7 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_02_24_042010) do
+ActiveRecord::Schema.define(version: 2023_02_24_031232) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "breweries", force: :cascade do |t|
     t.string "brew_id"
@@ -19,11 +22,11 @@ ActiveRecord::Schema.define(version: 2023_02_24_042010) do
   end
 
   create_table "user_breweries", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "brewery"
+    t.bigint "user_id"
+    t.bigint "brewery_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["brewery"], name: "index_user_breweries_on_brewery"
+    t.index ["brewery_id"], name: "index_user_breweries_on_brewery_id"
     t.index ["user_id"], name: "index_user_breweries_on_user_id"
   end
 
@@ -37,4 +40,6 @@ ActiveRecord::Schema.define(version: 2023_02_24_042010) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "user_breweries", "breweries"
+  add_foreign_key "user_breweries", "users"
 end
