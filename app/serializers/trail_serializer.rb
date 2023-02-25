@@ -12,4 +12,17 @@ class TrailSerializer
       end
     }
   end
+
+  def self.format_trail(trail)
+    {
+      "data":
+        [{
+          "id":   trail[:properties][:feature_id],
+          "type": trail[:properties][:type],
+          "attributes": {
+            "name": trail[:properties][:name]
+          }
+        }]
+    }
+  end
 end

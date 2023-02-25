@@ -1,9 +1,11 @@
 class Api::V1::SearchTrailsController < ApplicationController
   def index
-    json render: ColoTrailService.find_by_name(params[:search], params[:count])
+    trails = ColoTrailService.find_by_name(params[:search], params[:count])
+    json render: TrailSerializer.format_trails(trails)
   end
 
   def show
-    json render: ColoTrailService.find_by_id(params[:id])
+    trail = ColoTrailService.find_by_id(params[:id])
+    json render: TrailSerializer.format_trail(trail)
   end
 end
