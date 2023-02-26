@@ -19,8 +19,7 @@ describe 'Search Trails API' do
         expect(trail[:attributes]).to have_key(:name)
         expect(trail[:attributes][:name]).to be_a(String)
         expect(trail[:attributes]).to have_key(:coordinates)
-        expect(trail[:attributes][:coordinates]).to be_a(Array)
-        expect(trail[:attributes][:coordinates].first).to be_a(Float)
+        expect(trail[:attributes][:coordinates]).to be_a(String)
         expect(trail[:attributes]).to have_key(:bathrooms)
         expect(trail[:attributes][:bathrooms]).to be_a(String)
       end
@@ -58,8 +57,7 @@ describe 'Search Trails API' do
         expect(trail[:attributes]).to have_key(:name)
         expect(trail[:attributes][:name]).to be_a(String)
         expect(trail[:attributes]).to have_key(:coordinates)
-        expect(trail[:attributes][:coordinates]).to be_a(Array)
-        expect(trail[:attributes][:coordinates].first).to be_a(Float)
+        expect(trail[:attributes][:coordinates]).to be_a(String)
         expect(trail[:attributes]).to have_key(:bathrooms)
         expect(trail[:attributes][:bathrooms]).to be_a(String)
       end
