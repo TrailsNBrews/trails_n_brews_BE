@@ -17,7 +17,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: trails_n_berws_BE_development
+  database: trails_n_brews_BE_development
   pool: 5
   username: leobanos
   password:
@@ -33,7 +33,7 @@ development:
   #port: 5432
  
   # Schema search path. The server defaults to $user,public
-  #schema_search_path: trails_n_berws_BE,sharedapp,public
+  #schema_search_path: trails_n_brews_BE,sharedapp,public
  
   # Minimum log levels, in increasing order:
   #   debug5, debug4, debug3, debug2, debug1,
@@ -47,8 +47,16 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: trails_n_berws_BE_test
+  database: trails_n_brews_BE_test
   pool: 5
   username: leobanos
   password:
   timeout: 5000
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: trails_n_brews_BE_production
+  pool: 5
+  username: leobanos
+  password:
