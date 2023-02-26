@@ -17,7 +17,6 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  database: trails_n_brews_BE_development
   pool: <%= ENV.fetch("RAILS)MAX_THREADS") { 5 } %>
   timeout: 5000
 
