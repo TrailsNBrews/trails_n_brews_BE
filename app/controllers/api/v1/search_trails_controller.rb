@@ -2,10 +2,10 @@ class Api::V1::SearchTrailsController < ApplicationController
   def index
     params[:count] ||= 5
     trails = ColoTrailService.find_by_name(params[:search], params[:count])
-    if trails
+    unless trails.empty?
       render json: TrailSerializer.format_trails(trails)
     else
-      render json: TrailSerializer.format_empty
+      render json: CommonSerializer.format_empty
     end
   end
 

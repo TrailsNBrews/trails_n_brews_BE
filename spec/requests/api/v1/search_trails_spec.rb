@@ -35,8 +35,9 @@ describe 'Search Trails API' do
 
       expect(trails).to be_a(Hash)
       expect(trails[:data]).to be_a(Array)
-      expect(trails[:data].count).to eq(0)
-      expect(trails).to_not have_key(:id)
+      expect(trails[:data].count).to eq(1)
+      expect(trails[:data].first.empty?).to eq(true)
+      expect(trails[:data].first).to_not have_key(:id)
     end
   end
 
