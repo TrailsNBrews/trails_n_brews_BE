@@ -18,7 +18,9 @@ class TrailSerializer
       "id":   trail[:properties][:feature_id],
       "type": trail[:properties][:type],
       "attributes": {
-        "name": trail[:properties][:name]
+        "name":        trail[:properties][:name],
+        "coordinates": trail[:geometry][:coordinates],
+        "bathrooms":   trail[:properties][:bathrooms]
       }
     }
   end
