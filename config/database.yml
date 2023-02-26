@@ -48,8 +48,8 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default 
-  database: trails_n_brews_BE_development
+  database: trails_n_brews_BE_test
 
 production:
   <<: *default
-  database: trails_n_brews_BE_development
+  database: trails_n_brews_BE_production
