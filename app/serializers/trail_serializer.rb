@@ -15,10 +15,12 @@ class TrailSerializer
 
   def self.trail_properties(trail)
     {
-      "id":   trail[:properties][:feature_id],
+      "id":   trail[:properties][:feature_id].to_s,
       "type": trail[:properties][:type],
       "attributes": {
-        "name": trail[:properties][:name]
+        "name":        trail[:properties][:name],
+        "coordinates": "#{trail[:geometry][:coordinates].first}, #{trail[:geometry][:coordinates].last}",
+        "bathrooms":   trail[:properties][:bathrooms]
       }
     }
   end

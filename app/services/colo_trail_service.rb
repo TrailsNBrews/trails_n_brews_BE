@@ -7,7 +7,7 @@ class ColoTrailService
   end
 
   def self.find_by_id(id)
-    parse_json[:features].find { |feature| feature[:properties][:feature_id] == id }
+    parse_json[:features].find { |feature| feature[:properties][:feature_id] == id.to_i }
   end
 
   def self.parse_json
