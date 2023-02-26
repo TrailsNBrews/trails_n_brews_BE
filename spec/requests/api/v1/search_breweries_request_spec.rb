@@ -31,6 +31,24 @@ describe 'Search Breweries API' do
           expect(brew[:attributes]).to have_key(:website_url)
         end
       end
+
+      it 'attribute keys are the expected datatypes' do
+        count = 7
+        location = "39.737018,-104.204386" 
+        get "/api/v1/search_breweries?loc=#{location}&count=#{count}"
+        
+        breweries = JSON.parse(response.body, symbolize_names: true)
+        
+        breweries[:data].each do |brew|
+          expect(brew[:attributes][:name]).to be_a(String)
+          expect(brew[:attributes][:city]).to be_a(String)
+          expect(brew[:attributes][:state]).to be_a(String)
+          expect(brew[:attributes][:longitude]).to be_a(String)
+          expect(brew[:attributes][:latitude]).to be_a(String)
+          expect(brew[:attributes][:website_url]).to be_a(String) unless brew[:attributes][:website_url].nil?
+        end
+      end
+
     end
   end
 

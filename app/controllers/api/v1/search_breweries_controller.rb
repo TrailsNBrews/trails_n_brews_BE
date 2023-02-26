@@ -1,5 +1,6 @@
 class Api::V1::SearchBreweriesController < ApplicationController
   def index
+    require 'pry';binding.pry
     location = params[:loc]
     count = params[:count]
 
