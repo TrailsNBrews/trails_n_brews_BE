@@ -7,11 +7,11 @@ class OpenBrewService
     parse_json(response)
   end
 
-  def self.find_brewery(name, count = 5)
-    response = conn.get("/breweries") do |search|
-      search.params['by_state'] = 'colorado'
+  def self.find_brewery_by_name(name, count = 5)
+    response = conn.get("/breweries?") do |search|
       search.params['by_name'] = name
       search.params['per_page'] = count
+      search.params['by_state'] = 'colorado'
     end
     parse_json(response)
   end
