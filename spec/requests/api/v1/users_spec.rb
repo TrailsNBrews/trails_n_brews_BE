@@ -11,7 +11,6 @@ RSpec.describe 'Users API' do
         google_token: '474E5a5s12'
       })
       headers = { "CONTENT_TYPE" => "application/json" }
-
       post api_v1_users_path, headers: headers, params: JSON.generate(user: user_params)
       created_user = User.last
 
@@ -55,8 +54,8 @@ RSpec.describe 'Users API' do
 
       headers = {
         "CONTENT_TYPE" => "application/json",
-        "auth_token" => user_params[:google_token],
-        "auth_val" => user_params[:email] 
+        "HTTP_AUTH_TOKEN" => user_params[:google_token],
+        "HTTP_AUTH_VAL" => user_params[:email] 
       }
 
       get api_v1_user_path(user_params[:google_id]), headers: headers

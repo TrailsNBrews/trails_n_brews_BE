@@ -1,7 +1,6 @@
 class Api::V1::SearchBreweriesController < ApplicationController
   def index
     count = params[:count]
-
     if params[:loc]
       breweries = OpenBrewService.find_by_location(params[:loc], count)
     else

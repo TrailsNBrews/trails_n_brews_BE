@@ -57,7 +57,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#endpoints">Endpoints</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -134,12 +134,33 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 <!-- ROADMAP -->
-## Roadmap
+## Endpoints
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- Root directory: 'https://evening-caverns-30828.herokuapp.com/api/v1
+
+- /users
+  - GET user, /users/google_id?auth_token=token?auth_val=email
+    - Receives the request for the user to log in, authenticates it, and returns the user info.
+    - Headers:
+      - CONTENT_TYPE => application/json
+      - HTTP_AUTH_TOKEN is the google_token
+      - HTTP_AUTH_VAL is the user email
+  - POST user, /users/
+    - JSON string in the body with user email, first_name, last_name, google_id, google_token
+    - Headers: 
+      - CONTENT_TYPE => application/json
+
+- /search_breweries
+  - Breweries by location
+    - GET search_breweries?location="latitude,longitude"
+      - Returns the nearest breweries to the location entered
+  - Breweries by name
+    - GET search_breweries?name="name_fragment"&count="number_of_results"
+      - Returns breweries in Colorado that closest match the name entered
+  - Brewery by ID
+    - GET search_breweries?id="brewery_id"
+      - Returns the exact match for a brewery with that ID
+
 
 See the [open issues](https://github.com/TrailsNbrews/trails_n_brews_BE/issues) for a full list of proposed features (and known issues).
 
