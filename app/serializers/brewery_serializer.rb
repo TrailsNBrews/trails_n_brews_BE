@@ -1,5 +1,5 @@
 class BrewerySerializer
-  def self.location_serializer(breweries)
+  def self.multiple_brews_serializer(breweries)
     {
       "data": breweries.map do |brewery|
         { 

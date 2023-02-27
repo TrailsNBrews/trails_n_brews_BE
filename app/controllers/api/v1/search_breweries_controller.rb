@@ -1,11 +1,15 @@
 class Api::V1::SearchBreweriesController < ApplicationController
   def index
-    require 'pry';binding.pry
-    location = params[:loc]
     count = params[:count]
 
-    brews_by_location = OpenBrewService.find_by_location(location, count)
-    render json: BrewerySerializer.location_serializer(brews_by_location)
+    if params[:loc]
+      breweries = OpenBrewService.find_by_location(params[:loc], count)
+    else
+      breweries = OpenBrewService.find_brewery_by_name(params[:name], count)
+    end
+  # require 'pry';binding.pry
+    render json: BrewerySerializer.multiple_brews_serializer(breweries)
+  
   end
 
   def show

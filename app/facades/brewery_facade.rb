@@ -1,0 +1,3 @@
+class BreweryFacade
+
+end
