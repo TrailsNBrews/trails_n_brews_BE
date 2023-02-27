@@ -7,11 +7,11 @@ class Api::V1::SearchBreweriesController < ApplicationController
     else
       breweries = OpenBrewService.find_brewery_by_name(params[:name], count)
     end
-  # require 'pry';binding.pry
     render json: BrewerySerializer.multiple_brews_serializer(breweries)
-  
   end
 
   def show
+    brewery = OpenBrewService.find_brewery_by_id(params[:id])
+    render json: BrewerySerializer.single_brew_serializer(brewery)
   end
 end
