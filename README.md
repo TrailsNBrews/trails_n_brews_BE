@@ -150,6 +150,18 @@ _For more examples, please refer to the [Documentation](https://example.com)_
     - Headers: 
       - CONTENT_TYPE => application/json
 
+- /search_breweries
+  - Breweries by location
+    - GET search_breweries?location="latitude,longitude"
+      - Returns the nearest breweries to the location entered
+  - Breweries by name
+    - GET search_breweries?name="name_fragment"&count="number_of_results"
+      - Returns breweries in Colorado that closest match the name entered
+  - Brewery by ID
+    - GET search_breweries?id="brewery_id"
+      - Returns the exact match for a brewery with that ID
+
+
 See the [open issues](https://github.com/TrailsNbrews/trails_n_brews_BE/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
