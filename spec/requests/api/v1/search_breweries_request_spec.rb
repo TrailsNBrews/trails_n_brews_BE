@@ -130,12 +130,6 @@ describe 'Search Breweries API' do
         expect(brewery[:data][:attributes][:latitude]).to be_a(String)
         expect(brewery[:data][:attributes][:website_url]).to be_a(String) unless brewery[:data][:attributes][:website_url].nil?
       end
-    
-    
-    
     end
   end
-
-
-
 end
