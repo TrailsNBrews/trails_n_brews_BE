@@ -23,7 +23,7 @@ RSpec.describe 'Search Brewery Index' do
     it '#find_brewery returns brewery by provided name' do
       name = 'odell'
       count = 5
-      data = OpenBrewService.find_brewery(name, count)
+      data = OpenBrewService.find_brewery_by_name(name, count)
       expect(data).to be_a(Array)
       expect(data.count).to be <=(count)
       expect(data[0]).to be_a(Hash)

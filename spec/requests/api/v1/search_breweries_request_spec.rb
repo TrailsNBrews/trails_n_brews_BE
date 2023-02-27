@@ -109,7 +109,7 @@ describe 'Search Breweries API' do
       it 'returns a successful response;expected top level and attributes keys' do 
         
         id = "angry-james-brewing-co-silverthorne"
-        get "/api/v1/search_breweries/#{id}" 
+        get "/api/v1/search_breweries/#{id}"
 
         expect(response).to be_successful
         expect(response.status).to eq(200)
