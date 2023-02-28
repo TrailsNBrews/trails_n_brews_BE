@@ -34,7 +34,7 @@ class TrailSerializer
                   "id": brewery[:id],
                   "attributes": {
                                 "name": brewery[:name],
-                                "address":brewery[:address],
+                                "address": brewery[:address],
                                 "city": brewery[:city],
                                 "state": brewery[:state],
                                 "postal_code": brewery[:postal_code],
