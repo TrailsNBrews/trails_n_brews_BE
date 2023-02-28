@@ -24,4 +24,28 @@ class TrailSerializer
       }
     }
   end
+
+  def self.format_trail_with_breweries(trail)
+    {
+      "data":{"trail": trail_properties(trail[:trail]),
+             "breweries": trail[:breweries].map do |brewery|
+                { 
+                  "type": brewery[:brewery_type],
+                  "id": brewery[:id],
+                  "attributes": {
+                                "name": brewery[:name],
+                                "address": brewery[:address],
+                                "city": brewery[:city],
+                                "state": brewery[:state],
+                                "postal_code": brewery[:postal_code],
+                                "phone": brewery[:phone],
+                                "longitude": brewery[:longitude],
+                                "latitude": brewery[:latitude],
+                                "website_url": brewery[:website_url]
+                  }
+                }
+              end
+            }
+    }
+  end
 end

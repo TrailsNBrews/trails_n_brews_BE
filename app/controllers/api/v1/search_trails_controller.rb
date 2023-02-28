@@ -10,9 +10,9 @@ class Api::V1::SearchTrailsController < ApplicationController
   end
 
   def show
-    trail = ColoTrailService.find_by_id(params[:id])
+    trail = TrailsFacade.trail_with_breweries(params[:id])
     if trail
-      render json: TrailSerializer.format_trail(trail)
+      render json: TrailSerializer.format_trail_with_breweries(trail)
     else
       render json: { "errors": "Unable to locate trail" }, status: :not_found
     end
