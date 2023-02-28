@@ -44,8 +44,8 @@
       </ul>
     </li>
     <li><a href="#contributing">Contributing</a></li>
-    <!-- <li><a href="#license">License</a></li> -->
-    <!-- <li><a href="#contact">Contact</a></li> -->
+    <li><a href="#developers">Developers</a></li>
+    <li><a href="#project-managers-instructors">Project Managers Instructors</a></li>
     <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
   </ul>
 </details>
@@ -225,7 +225,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Project Link: [https://github.com/TrailsNbrews/trails_n_brews_BE](https://github.com/TrailsNbrews/trails_n_brews_BE)
 
-## Project Managers/Instructors
+## Project Managers-Instructors
 
 1. Meg Stang
 2. Mike Dao
