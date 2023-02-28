@@ -7,22 +7,21 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
+[![Project][project-shield]][project-url]
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/TrailsNBrews/trails_n_brews_BE">
-    <img src="app/assets/images/trails_n_brew_logo.png" alt="Logo" width="80" height="80">
+    <img src="app/assets/images/trails_n_brew_logo.png" alt="Logo" width="125" height="125">
   </a>
   <h3 align="center">Trails N Brews, BE</h3>
 </div>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
-  <ol>
+  <ul list-style-position="inside">
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
@@ -47,10 +46,8 @@
     <!-- <li><a href="#license">License</a></li> -->
     <!-- <li><a href="#contact">Contact</a></li> -->
     <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
-  </ol>
+  </ul>
 </details>
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -73,8 +70,6 @@ Utilize an Agile project management process to hone skill and comfort with build
 * [![Rails]][Rails-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -108,7 +103,7 @@ Utilize an Agile project management process to hone skill and comfort with build
 <!-- ROADMAP -->
 ## Usage
 
-## Endpoints
+### Endpoints
 
 - Root directory: 'https://evening-caverns-30828.herokuapp.com/api/v1
 
@@ -157,8 +152,6 @@ See the [open issues](https://github.com/TrailsNbrews/trails_n_brews_BE/issues) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -175,15 +168,12 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- LICENSE
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
  -->
 
 <!-- CONTACT -->
@@ -228,6 +218,8 @@ Project Link: [https://github.com/TrailsNbrews/trails_n_brews_BE](https://github
 [stars-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/stargazers
 [issues-shield]: https://img.shields.io/github/issues/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
 [issues-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/issues
+[project-shield]: https://img.shields.io/github/contributors/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
+[contributors-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/graphs/contributors
 [license-shield]: https://img.shields.io/github/license/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
 [license-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
