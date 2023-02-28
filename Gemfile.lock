@@ -33,6 +33,9 @@ GEM
       activemodel (= 5.2.8.1)
       activesupport (= 5.2.8.1)
       arel (>= 9.0)
+    activerecord-postgis-adapter (5.2.3)
+      activerecord (~> 5.1)
+      rgeo-activerecord (~> 6.0)
     activestorage (5.2.8.1)
       actionpack (= 5.2.8.1)
       activerecord (= 5.2.8.1)
@@ -147,6 +150,9 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rgeo (3.0.0)
+    rgeo-activerecord (6.2.2)
+      activerecord (>= 5.0)
+      rgeo (>= 1.0.0)
     rgeo-geojson (2.1.1)
       rgeo (>= 1.0.0)
     rspec-core (3.12.1)
@@ -202,6 +208,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  activerecord-postgis-adapter
   bootsnap (>= 1.1.0)
   byebug
   factory_bot_rails
