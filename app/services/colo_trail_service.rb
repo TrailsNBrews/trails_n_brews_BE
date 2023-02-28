@@ -11,6 +11,6 @@ class ColoTrailService
   end
 
   def self.parse_json
-    JSON.parse(File.read('db/data/Trailheads_COTREX02152023.json'), symbolize_names: true)
+    JSON.parse(File.read('db/data/Trailheads_COTREX02152023(CONVERTED).json'), symbolize_names: true)
   end
 end
