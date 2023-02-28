@@ -19,7 +19,7 @@ class TrailSerializer
       "type": trail[:properties][:type],
       "attributes": {
         "name":        trail[:properties][:name],
-        "coordinates": "#{trail[:geometry][:coordinates].first}, #{trail[:geometry][:coordinates].last}",
+        "coordinates": "#{trail[:geometry][:coordinates].last}, #{trail[:geometry][:coordinates].first}",
         "bathrooms":   trail[:properties][:bathrooms]
       }
     }
