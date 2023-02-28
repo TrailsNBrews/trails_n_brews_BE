@@ -88,7 +88,6 @@ describe 'Search Trails API' do
       trails = JSON.parse(response.body, symbolize_names: true)
 
       expect(trails).to be_a(Hash)
-      # binding.pry
       expect(trails[:errors].first[:details]).to be_a(String)
       expect(trails[:errors].first[:details]).to eq("Unable to locate trail")
       expect(trails).to_not have_key(:id)
