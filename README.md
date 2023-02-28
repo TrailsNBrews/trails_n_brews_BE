@@ -3,11 +3,12 @@
 <a name="readme-top"></a>
 
 <!-- PROJECT SHIELDS -->
+[![Activity][activity-shield]][activity-url]
+[![Commits][commits-activity-shield]][commits-activity-url]
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![Project][project-shield]][project-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -43,8 +44,8 @@
       </ul>
     </li>
     <li><a href="#contributing">Contributing</a></li>
-    <!-- <li><a href="#license">License</a></li> -->
-    <!-- <li><a href="#contact">Contact</a></li> -->
+    <li><a href="#developers">Developers</a></li>
+    <li><a href="#project-managers-instructors">Project Managers Instructors</a></li>
     <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
   </ul>
 </details>
@@ -179,24 +180,57 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Developers
 
-1. Brandon Gray, [Github: bGray88](https://github.com/bGray88)
-2. Christian McCabe, [Github: cemccabe](https://github.com/cemccabe)
-3. Kyle Ledin, [Github: Kledin85](https://github.com/Kledin85)
-4. Leo Banos Garcia, [Github: banosl](https://github.com/banosl)
-5. Max MacGillivray, [Github: MoxieMax](https://github.com/MoxieMax)
-6. Sergio Azcona, [Github: Sergio-Azcona](https://github.com/Sergio-Azcona)
+<div align="center">
+  <img src="https://avatars.githubusercontent.com/u/111726505?s=400&u=30c6a5c91b611750a32a1a07dc1da834684dffa1&v=4" alt="Profile" width="80" height="80">
+  <p align="center">
+    Brandon Gray<br>
+    <a href="https://github.com/bGray88">Github: bGray88</a>
+  </p>
+</div>
+<div align="center">
+  <img src="https://avatars.githubusercontent.com/u/46434166?v=4" alt="Profile" width="80" height="80">
+  <p align="center">
+    Christian McCabe<br>
+    <a href="https://github.com/cemccabe">Github: cemccabe</a>
+  </p>
+</div>
+<div align="center">
+  <img src="https://avatars.githubusercontent.com/u/112499285?v=4" alt="Profile" width="80" height="80">
+  <p align="center">
+    Kyle Ledin<br>
+    <a href="https://github.com/Kledin85">Github: Kledin85</a>
+  </p>
+</div>
+<div align="center">
+  <img src="https://avatars.githubusercontent.com/u/111591731?v=4" alt="Profile" width="80" height="80">
+  <p align="center">
+    Leo Banos Garcia<br>
+    <a href="https://github.com/banosl">Github: banosl</a>
+  </p>
+</div>
+<div align="center">
+  <img src="https://avatars.githubusercontent.com/u/108768349?v=4" alt="Profile" width="80" height="80">
+  <p align="center">
+    Max MacGillivray<br>
+    <a href="https://github.com/MoxieMax">Github: MoxieMax</a>
+  </p>
+</div>
+<div align="center">
+  <img src="https://avatars.githubusercontent.com/u/106788066?v=4" alt="Profile" width="80" height="80">
+  <p align="center">
+    Sergio Azcona<br>
+    <a href="https://github.com/Sergio-Azcona">Github: Sergio-Azcona</a>
+  </p>
+</div>
 
 Project Link: [https://github.com/TrailsNbrews/trails_n_brews_BE](https://github.com/TrailsNbrews/trails_n_brews_BE)
 
-## Project Managers/Instructors
+## Project Managers-Instructors
 
 1. Meg Stang
 2. Mike Dao
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- ACKNOWLEDGMENTS 
 ## Acknowledgments
@@ -208,8 +242,11 @@ Project Link: [https://github.com/TrailsNbrews/trails_n_brews_BE](https://github
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 -->
 
-
 <!-- MARKDOWN LINKS & IMAGES -->
+[activity-shield]: https://img.shields.io/github/commit-activity/m/TrailsNBrews/trails_n_brews_BE?style=for-the-badge
+[activity-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/commits/main
+[commits-activity-shield]: https://img.shields.io/github/last-commit/TrailsNBrews/trails_n_brews_BE?style=for-the-badge
+[commits-activity-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/commits/main
 [contributors-shield]: https://img.shields.io/github/contributors/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
 [contributors-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
@@ -218,8 +255,6 @@ Project Link: [https://github.com/TrailsNbrews/trails_n_brews_BE](https://github
 [stars-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/stargazers
 [issues-shield]: https://img.shields.io/github/issues/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
 [issues-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/issues
-[project-shield]: https://img.shields.io/github/contributors/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
-[contributors-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/graphs/contributors
 [license-shield]: https://img.shields.io/github/license/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
 [license-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
