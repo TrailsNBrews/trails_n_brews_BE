@@ -67,7 +67,7 @@ describe 'Search Trails API' do
       get '/api/v1/search_trails/5428'
 
       expect(response).to_not be_successful
-
+# 
       trails = JSON.parse(response.body, symbolize_names: true)
 
       expect(trails).to be_a(Hash)
