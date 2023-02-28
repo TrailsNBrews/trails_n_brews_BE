@@ -1,12 +1,11 @@
 class ErrorSerializer
   def self.error_json(error)
     {
+      message: error.message,
       errors: [
-        {
-          title: error.message,
-          status: '404'
-        }
-      ]
+        details: error.details
+      ],
+      status: error.status
     }
   end
 end
