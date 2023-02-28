@@ -1,25 +1,8 @@
 # trails_n_brews_BE
 
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
 
 <!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -29,11 +12,9 @@
 <br />
 <div align="center">
   <a href="https://github.com/TrailsNBrews/trails_n_brews_BE">
-    <!--<img src="images/logo.png" alt="Logo" width="80" height="80">-->
+    <img src="app/assets/images/trails_n_brew_logo.png" alt="Logo" width="80" height="80">
   </a>
-
-<h3 align="center">Trails N Brews, BE</h3>
-
+  <h3 align="center">Trails N Brews, BE</h3>
 </div>
 
 
@@ -56,12 +37,16 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#endpoints">Endpoints</a></li>
+    <li>
+      <a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#endpoints">Endpoints</a></li>
+      </ul>
+    </li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <!-- <li><a href="#license">License</a></li> -->
+    <!-- <li><a href="#contact">Contact</a></li> -->
+    <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
   </ol>
 </details>
 
@@ -120,20 +105,9 @@ Utilize an Agile project management process to hone skill and comfort with build
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- USAGE EXAMPLES -->
+<!-- ROADMAP -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
 ## Endpoints
 
 - Root directory: 'https://evening-caverns-30828.herokuapp.com/api/v1
@@ -145,22 +119,39 @@ _For more examples, please refer to the [Documentation](https://example.com)_
       - CONTENT_TYPE => application/json
       - HTTP_AUTH_TOKEN is the google_token
       - HTTP_AUTH_VAL is the user email
+      ![alt text](app/assets/images/readme_user_get.png)
+
   - POST user, /users/
     - JSON string in the body with user email, first_name, last_name, google_id, google_token
     - Headers: 
       - CONTENT_TYPE => application/json
+      ![alt text](app/assets/images/readme_user_post.png)
 
 - /search_breweries
   - Breweries by location
     - GET search_breweries?location="latitude,longitude"
       - Returns the nearest breweries to the location entered
+      ![alt text](app/assets/images/readme_brewery_loc_get.png)
+
   - Breweries by name
     - GET search_breweries?name="name_fragment"&count="number_of_results"
       - Returns breweries in Colorado that closest match the name entered
+      ![alt text](app/assets/images/readme_brewery_name_get.png)
+
   - Brewery by ID
     - GET search_breweries?id="brewery_id"
       - Returns the exact match for a brewery with that ID
+      ![alt text](app/assets/images/readme_brewery_id_get.png)
 
+- /search_trails
+  - Trails by name
+    - GET search_trails?search="name_fragment"&count="number_of_results"
+      - Returns trails in Colorado that closest match the name entered
+      ![alt text](app/assets/images/readme_trail_name_get.png)
+  - Trail by ID
+    - GET search_trails?id="trail_feature_id"
+      - Returns the exact match for a trail with that Feature ID
+      ![alt text](app/assets/images/readme_trail_id_get.png)
 
 See the [open issues](https://github.com/TrailsNbrews/trails_n_brews_BE/issues) for a full list of proposed features (and known issues).
 
@@ -229,11 +220,10 @@ Project Link: [https://github.com/TrailsNbrews/trails_n_brews_BE](https://github
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
 [contributors-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
-[forks-url]: https://github.com/TrailsNBrews/trails_n_brews_BEe/network/members
+[forks-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/network/members
 [stars-shield]: https://img.shields.io/github/stars/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
 [stars-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/stargazers
 [issues-shield]: https://img.shields.io/github/issues/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
