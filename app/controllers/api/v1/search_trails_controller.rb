@@ -10,7 +10,7 @@ class Api::V1::SearchTrailsController < ApplicationController
   end
 
   def show
-    trail = ColoTrailService.find_by_id(params[:id])
+    trail = TrailsFacade.trail_with_breweries(params[:id])
     if trail
       render json: TrailSerializer.format_trail_with_breweries(trail)
     else
