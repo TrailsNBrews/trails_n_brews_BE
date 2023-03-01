@@ -10,13 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_02_24_031232) do
+ActiveRecord::Schema.define(version: 2023_03_01_183108) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "breweries", force: :cascade do |t|
     t.string "brew_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "trails", force: :cascade do |t|
+    t.string "trail_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -28,6 +34,15 @@ ActiveRecord::Schema.define(version: 2023_02_24_031232) do
     t.datetime "updated_at", null: false
     t.index ["brewery_id"], name: "index_user_breweries_on_brewery_id"
     t.index ["user_id"], name: "index_user_breweries_on_user_id"
+  end
+
+  create_table "user_trails", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "trail_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["trail_id"], name: "index_user_trails_on_trail_id"
+    t.index ["user_id"], name: "index_user_trails_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -42,4 +57,6 @@ ActiveRecord::Schema.define(version: 2023_02_24_031232) do
 
   add_foreign_key "user_breweries", "breweries"
   add_foreign_key "user_breweries", "users"
+  add_foreign_key "user_trails", "trails"
+  add_foreign_key "user_trails", "users"
 end

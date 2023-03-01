@@ -4,6 +4,8 @@ Rails.application.routes.draw do
       resources :users, only: [:create, :show]
       resources :search_breweries, only: [:index, :show]
       resources :search_trails, only: [:index, :show]
+      resources :user_breweries, only: [:create]
+      resources :user_trails, only: [:create]
     end
   end
 end

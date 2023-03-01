@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   describe 'relationships' do
     it { should have_many(:user_breweries).dependent(:destroy)  }
+    it { should have_many(:user_trails).dependent(:destroy)  }
   end
   
   describe 'validations for presence and uniqueness' do
