@@ -16,6 +16,7 @@ class TrailSerializer
   def self.trail_properties(trail)
     {
       "id":   trail[:properties][:feature_id].to_s,
+      "co_id": trail[:properties][:place_id].to_s,
       "type": trail[:properties][:type],
       "attributes": {
         "name":        trail[:properties][:name],
