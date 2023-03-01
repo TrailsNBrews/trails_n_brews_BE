@@ -58,7 +58,7 @@ describe 'Search Breweries API' do
         count = 7
         name = 'Odell'
         get "/api/v1/search_breweries?name=#{name}&count=#{count}" 
-      # require 'pry';binding.pry
+        
         expect(response).to be_successful
         expect(response.status).to eq(200)
 
