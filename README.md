@@ -3,12 +3,15 @@
 <a name="readme-top"></a>
 
 <!-- PROJECT SHIELDS -->
-[![Activity][activity-shield]][activity-url]
-[![Commits][commits-activity-shield]][commits-activity-url]
+[![Activity][commit-activity-shield]][commit-activity-url]
+[![Commit][last-commit-shield]][last-commit-url]
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
+[![Code-Size][code-size-shield]][code-size-url]<br>
+
+[![Watchers][watchers-shield]][watchers-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -45,7 +48,7 @@
     </li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#developers">Developers</a></li>
-    <li><a href="#project-managers-instructors">Project Managers Instructors</a></li>
+    <li><a href="#project-managers-instructors">Project Managers-Instructors</a></li>
     <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
   </ul>
 </details>
@@ -243,10 +246,10 @@ Project Link: [https://github.com/TrailsNbrews/trails_n_brews_BE](https://github
 -->
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[activity-shield]: https://img.shields.io/github/commit-activity/m/TrailsNBrews/trails_n_brews_BE?style=for-the-badge
-[activity-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/commits/main
-[commits-activity-shield]: https://img.shields.io/github/last-commit/TrailsNBrews/trails_n_brews_BE?style=for-the-badge
-[commits-activity-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/commits/main
+[commit-activity-shield]: https://img.shields.io/github/commit-activity/m/TrailsNBrews/trails_n_brews_BE?style=for-the-badge
+[commit-activity-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/commits/main
+[last-commit-shield]: https://img.shields.io/github/last-commit/TrailsNBrews/trails_n_brews_BE?style=for-the-badge
+[last-commit-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/commits/main
 [contributors-shield]: https://img.shields.io/github/contributors/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
 [contributors-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
@@ -255,6 +258,10 @@ Project Link: [https://github.com/TrailsNbrews/trails_n_brews_BE](https://github
 [stars-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/stargazers
 [issues-shield]: https://img.shields.io/github/issues/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
 [issues-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/issues
+[code-size-shield]: https://img.shields.io/github/languages/code-size/TrailsNBrews/trails_n_brews_BE?style=for-the-badge
+[code-size-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/wiki
+[watchers-shield]: https://img.shields.io/github/watchers/TrailsNBrews/trails_n_brews_BE?style=social
+[watchers-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/network/members
 [license-shield]: https://img.shields.io/github/license/TrailsNBrews/trails_n_brews_BE.svg?style=for-the-badge
 [license-url]: https://github.com/TrailsNBrews/trails_n_brews_BE/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
