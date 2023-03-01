@@ -54,6 +54,7 @@ describe 'Search Trails API' do
       
       expect(trails[:data][:trail]).to have_key(:type)
       expect(trails[:data][:trail]).to have_key(:id)
+      expect(trails[:data][:trail]).to have_key(:co_id)
       expect(trails[:data][:trail]).to have_key(:attributes)
       expect(trails[:data][:trail][:attributes]).to have_key(:name)
       expect(trails[:data][:trail][:attributes][:name]).to be_a(String)
