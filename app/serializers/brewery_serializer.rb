@@ -7,7 +7,7 @@ class BrewerySerializer
             "id": brewery[:id],
             "attributes": {
                           "name": brewery[:name],
-                          "address": brewery[:address],
+                          "street": brewery[:street],
                           "city": brewery[:city],
                           "state": brewery[:state],
                           "postal_code": brewery[:postal_code],
@@ -30,7 +30,7 @@ class BrewerySerializer
             "attributes": 
             {
                         "name": brewery[:name],
-                        "address": brewery[:adress],
+                        "street": brewery[:street],
                         "city": brewery[:city],
                         "state": brewery[:state],
                         "postal_code": brewery[:postal_code],

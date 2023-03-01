@@ -75,7 +75,7 @@ describe 'Search Trails API' do
         expect(brewery[:attributes]).to have_key(:longitude)
         expect(brewery[:attributes]).to have_key(:latitude)
         expect(brewery[:attributes]).to have_key(:website_url)
-        expect(brewery[:attributes]).to have_key(:address)
+        expect(brewery[:attributes]).to have_key(:street)
         expect(brewery[:attributes]).to have_key(:phone)
       end
     end

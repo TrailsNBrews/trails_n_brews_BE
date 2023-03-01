@@ -26,7 +26,6 @@ class TrailSerializer
   end
 
   def self.format_trail_with_breweries(trail)
-    # binding.pry
     {
       "data":{"trail": trail_properties(trail[:trail]),
              "breweries": trail[:breweries].map do |brewery|
@@ -35,7 +34,7 @@ class TrailSerializer
                   "id": brewery[:id],
                   "attributes": {
                                 "name": brewery[:name],
-                                "address": brewery[:address],
+                                "street": brewery[:street],
                                 "city": brewery[:city],
                                 "state": brewery[:state],
                                 "postal_code": brewery[:postal_code],
