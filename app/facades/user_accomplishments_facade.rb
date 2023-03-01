@@ -1,5 +1,12 @@
-class UserAccomplishmnetsFacade
-  def self.accomplishments
-    
+class UserAccomplishmentsFacade
+  def self.accomplishments(user_id)
+    user = User.find(user_id)
+    breweries = user.breweries.map do |brewery|
+      {brewery_id: brewery.brew_id}
+    end
+    trails = user.trails.map do |trail|
+      {trail_id: trail.trail_id}
+    end
+    {user: {user_id: user.id, first_name: user.first_name, last_name: user.last_name, breweries: breweries, trails: trails}}
   end
 end
