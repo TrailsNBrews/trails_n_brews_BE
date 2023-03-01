@@ -57,8 +57,8 @@ describe 'Search Breweries API' do
       it 'returns a successful response with the expected top level and attributes keys' do 
         count = 7
         name = 'Odell'
-        get "/api/v1/search_breweries?name=#{name}&count=#{count}" 
-        
+        get "/api/v1/search_breweries?name=#{name}&count=#{count}"         
+
         expect(response).to be_successful
         expect(response.status).to eq(200)
 
