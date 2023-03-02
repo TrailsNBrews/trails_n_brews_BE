@@ -7,4 +7,9 @@ class Api::V1::UserBreweriesController < ApplicationController
       render json: { "errors": user_brewery.errors.full_messages.to_sentence }, status: 400
     end 
   end
+
+  def destroy
+    user_brewery = UserBrewery.find(params[:id]) 
+    user_brewery.destroy
+  end
 end

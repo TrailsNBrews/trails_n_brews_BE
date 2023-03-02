@@ -7,4 +7,9 @@ class Api::V1::UserTrailsController < ApplicationController
       render json: { "errors": user_trail.errors.full_messages.to_sentence }, status: 400
     end 
   end
+
+  def destroy
+    user_trail = UserTrail.find(params[:id])
+    user_trail.destroy
+  end
 end
