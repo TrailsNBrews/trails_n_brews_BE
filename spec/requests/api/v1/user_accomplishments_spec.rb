@@ -12,7 +12,6 @@ describe 'User Accomplishments' do
     expect(response).to be_successful
 
     accomplishments = JSON.parse(response.body, symbolize_names: true)
-    # binding.pry
     expect(accomplishments[:data][:user]).to be_a(Hash)
     expect(accomplishments[:data][:user][:user_id]).to eq(user.id)
     expect(accomplishments[:data][:user][:user_first_name]).to eq(user.first_name)
