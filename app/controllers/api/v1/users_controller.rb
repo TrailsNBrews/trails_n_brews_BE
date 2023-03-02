@@ -9,9 +9,7 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def show
-require 'pry';binding.pry
-    headers = request.headers.to_h.deep_transform_keys(&:underscore).deep_transform_keys(&:upcase).deep_symbolize_keys
-    @user = User.find_by(email: headers[:HTTP_AUTH_VAL])
+    @user = User.find_by(email: request.headers[:HTTP_AUTH_VAL])
     if @user
       render json: UserSerializer.format_user(@user)
     else
