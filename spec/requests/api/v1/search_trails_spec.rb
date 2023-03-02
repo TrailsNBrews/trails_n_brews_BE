@@ -18,8 +18,8 @@ describe 'Search Trails API' do
         expect(trail).to have_key(:attributes)
         expect(trail[:attributes]).to have_key(:name)
         expect(trail[:attributes][:name]).to be_a(String)
-        expect(trail[:attributes]).to have_key(:coordinates)
-        expect(trail[:attributes][:coordinates]).to be_a(String)
+        expect(trail[:attributes]).to have_key(:latitude)
+        expect(trail[:attributes]).to have_key(:longitude)
         expect(trail[:attributes]).to have_key(:bathrooms)
         expect(trail[:attributes][:bathrooms]).to be_a(String)
       end
@@ -54,11 +54,14 @@ describe 'Search Trails API' do
       
       expect(trails[:data][:trail]).to have_key(:type)
       expect(trails[:data][:trail]).to have_key(:id)
+      expect(trails[:data][:trail]).to have_key(:co_id)
       expect(trails[:data][:trail]).to have_key(:attributes)
       expect(trails[:data][:trail][:attributes]).to have_key(:name)
       expect(trails[:data][:trail][:attributes][:name]).to be_a(String)
-      expect(trails[:data][:trail][:attributes]).to have_key(:coordinates)
-      expect(trails[:data][:trail][:attributes][:coordinates]).to be_a(String)
+      expect(trails[:data][:trail][:attributes]).to have_key(:latitude)
+      expect(trails[:data][:trail][:attributes]).to have_key(:longitude)
+      expect(trails[:data][:trail][:attributes][:latitude]).to be_a(String)
+      expect(trails[:data][:trail][:attributes][:longitude]).to be_a(String)
       expect(trails[:data][:trail][:attributes]).to have_key(:bathrooms)
       expect(trails[:data][:trail][:attributes][:bathrooms]).to be_a(String)
 

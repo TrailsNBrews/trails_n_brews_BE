@@ -20,6 +20,19 @@
     <img src="app/assets/images/trails_n_brew_logo.png" alt="Logo" width="125" height="125">
   </a>
   <h3 align="center">Trails N Brews, BE</h3>
+
+  <p align="center">
+    A guide to lead hikers to "watering holes"
+    <br />
+    <a href="https://github.com/TrailsNBrews/Trails-N-Brews_FE/"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/TrailsNBrews/Trails-N-Brews_FE/">View Demo</a>
+    ·
+    <a href="https://github.com/TrailsNBrews/Trails-N-Brews_FE/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/TrailsNBrews/Trails-N-Brews_FE/issues">Request Feature</a>
+  </p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -49,7 +62,7 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#developers">Developers</a></li>
     <li><a href="#project-managers-instructors">Project Managers-Instructors</a></li>
-    <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ul>
 </details>
 
@@ -104,12 +117,28 @@ Utilize an Agile project management process to hone skill and comfort with build
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
 <!-- ROADMAP -->
+## Roadmap
+
+- [ ] Add Changelog
+- [x] Add back to top links
+- [ ] Add Additional Templates w/ Examples
+- [ ] Add "components" document to easily copy & paste sections of the readme
+
+
+See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Usage
 
 ### Endpoints
 
-- Root directory: 'https://evening-caverns-30828.herokuapp.com/api/v1
+- Root directory: 'https://evening-caverns-30828.herokuapp.com/api/v1'
+- Try it now: <br>
+'https://evening-caverns-30828.herokuapp.com/api/v1/search_trails?search=ber'
+'https://evening-caverns-30828.herokuapp.com/api/v1/search_breweries?name=brew'
 
 - /users
   - GET user, /users/google_id?auth_token=token?auth_val=email
@@ -172,14 +201,6 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
- -->
-
 <!-- CONTACT -->
 ## Developers
 
@@ -226,7 +247,10 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
   </p>
 </div>
 
-Project Link: [https://github.com/TrailsNbrews/trails_n_brews_BE](https://github.com/TrailsNbrews/trails_n_brews_BE)
+Project Links: <br> 
+[Organization Link](https://github.com/orgs/TrailsNBrews/repositories) <br>
+[Backend Link](https://github.com/TrailsNbrews/trails_n_brews_BE) <br>
+[Frontend Link](https://github.com/TrailsNBrews/Trails-N-Brews_FE)
 
 ## Project Managers-Instructors
 
@@ -235,15 +259,13 @@ Project Link: [https://github.com/TrailsNbrews/trails_n_brews_BE](https://github
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGMENTS 
+<!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [Choose an Open Source License](https://choosealicense.com)
+* ["The Best README Template" by Github User othneil](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
--->
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [commit-activity-shield]: https://img.shields.io/github/commit-activity/m/TrailsNBrews/trails_n_brews_BE?style=for-the-badge
