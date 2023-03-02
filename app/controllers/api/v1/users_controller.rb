@@ -9,8 +9,9 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def show
-    @user = User.find_by(email: request.headers[:HTTP_AUTH_VAL])
-    if request.headers[:HTTP_AUTH_TOKEN] && @user&.google_token == request.headers[:HTTP_AUTH_TOKEN]
+    headers = request.headers.to_h.deep_symbolize_keys.transform_keys(&:upcase)
+    @user = User.find_by(email: headers[:HTTP_AUTH_VAL])
+    if headers[:HTTP_AUTH_TOKEN] && @user&.google_token == headers[:HTTP_AUTH_TOKEN]
       render json: UserSerializer.format_user(@user)
     else
       render json: { "errors": "Unable to locate or authenticate user" }, status: :not_found
