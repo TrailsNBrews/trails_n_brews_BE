@@ -10,7 +10,8 @@ class UserSerializer
             "last_name":    user.last_name,
             "email":        user.email,
             "google_id":    user.google_id,
-            "google_token": user.google_token
+            "google_token": user.google_token,
+            "image": user.image
           }
         }]
     }
