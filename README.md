@@ -262,7 +262,8 @@ Project Links: <br>
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [Choose an Open Source License](https://choosealicense.com)
+* [Open Berwery DB](https://www.openbrewerydb.org/)
+* [Colorado Trail Explorer](https://data.colorado.gov/)
 * ["The Best README Template" by Github User othneil](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
